@@ -23,7 +23,7 @@ const AsideMenu = () => {
     <div className={styles.aside}>
       <div className={styles.siderContent}>
         <div className={styles.logo}>
-          <Icon width='72px' name={"FAZER"} isActive={false} onClick={() => { }} />
+          <Icon width='124px' name={"FAZER"} isActive={false} onClick={() => { }} />
         </div>
         <div className={styles.menuItems}>
           <MenuItem
