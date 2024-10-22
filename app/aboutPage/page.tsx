@@ -21,22 +21,22 @@ export default function Home() {
       role="Backend Developer"
     />,
     <TeammateBox
-      key="2"
-      name="რაინდი მგელაძე"
-      image="/knight.png"
-      role="Backend Developer"
+      key="3"
+      name="მართა თოდუა"
+      image="/marta.png"
+      role="პროგრესელი"
     />,
     <TeammateBox
-      key="1"
-      name="ანრი დუმბაძე"
-      image="/anri.png"
-      role="UI/UX & Front End"
+      key="4"
+      name="გიორგი გობაძე"
+      image="/gio.png"
+      role="კაი ბიჭი"
     />,
     <TeammateBox
-      key="1"
-      name="ანრი დუმბაძე"
-      image="/anri.png"
-      role="UI/UX & Front End"
+      key="5"
+      name="ელისაბედ გეგეშიძე"
+      image="/gogo.png"
+      role="აზრზე არ ვარ ვინაა"
     />,
   ];
 
