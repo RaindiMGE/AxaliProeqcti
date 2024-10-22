@@ -11,7 +11,7 @@ type Props = {
 
 const MenuItem = ({ name, isActive, onClick }: Props) => {
 
-  
+
   return (<div
     className={styles.menuItem}
     onClick={onClick}
