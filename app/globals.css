@@ -11,3 +11,13 @@
 body {
   background-color: #0E0E0E;
 }
+
+.content {
+  margin-left: 241px;
+}
+
+@media (max-width: 768px) {
+  .content {
+    margin-left: 0;
+  }
+}

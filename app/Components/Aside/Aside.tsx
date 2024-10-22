@@ -16,8 +16,6 @@ const AsideMenu = () => {
     router.replace(route);
   };
 
-  
-
 
   return (
     <div className={styles.aside}>
@@ -29,26 +27,26 @@ const AsideMenu = () => {
           <MenuItem
             name={"home"}
             isActive={activeItem === "home"}
-            onClick={() => handleMenuItemClick("home", "/")} // Use relative paths
+            onClick={() => handleMenuItemClick("home", "/")}
           />
           <MenuItem
             name={"about"}
             isActive={activeItem === "about"}
-            onClick={() => handleMenuItemClick("about", "/aboutPage")} // Use relative paths
+            onClick={() => handleMenuItemClick("about", "/aboutPage")}
           />
-<MenuItem
+          <MenuItem
             name={"technology"}
             isActive={activeItem === "technology"}
-            onClick={() => handleMenuItemClick("technology", "/technologyPage")} // Use relative paths
+            onClick={() => handleMenuItemClick("technology", "/technologyPage")}
           />
 
 
-          
+
         </div>
       </div>
 
-        
-      </div>
+
+    </div>
   );
 };
 

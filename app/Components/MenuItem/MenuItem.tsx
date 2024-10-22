@@ -10,7 +10,6 @@ type Props = {
 };
 
 const MenuItem = ({ name, isActive, onClick }: Props) => {
-
   
   return (
     <div
