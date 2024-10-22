@@ -1,13 +1,13 @@
 import Image from "next/image";
 import styles from "./page.module.scss";
-import Sider from "antd/es/layout/Sider";
+import Aside from "./Components/Aside/Aside";
 
 export default function Home() {
   return (
    <div className={styles.page}>
-    <Sider/>
+    <Aside/>
     <div className={styles.content}>
-
+bjggggggggggg
     </div>
    </div>
 
