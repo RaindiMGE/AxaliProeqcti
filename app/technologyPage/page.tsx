@@ -16,9 +16,9 @@ const YourComponent = () => {
     useEffect(() => {
         setLastImagesLength(imageUrls.length)
     }, [imageUrls])
-    
+
     useEffect(() => {
-        if(lastImagesLength !== currentImages) {
+        if (lastImagesLength !== currentImages) {
             setShowPopUp(true)
             setCurretnImages(lastImagesLength)
         }
@@ -65,18 +65,18 @@ const YourComponent = () => {
     if (error) return <div>{error}</div>;
 
     return (
-        <>
-            {showPopUp && 
-            <div className={styles.popUp}>
+
+        showPopUp ?
+            <div className={styles.popUp
+            } >
                 <span className={styles.span}>
-                    რალეგალური თევზჭერა დაფიქსირდა მე-3 კამერაში!
+                    არალეგალური თევზჭერა დაფიქსირდა მე-3 კამერაში!
                 </span>
-                    <iframe className={styles.iFrame} src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2982.4971648727847!2d41.6267781!3d41.623384!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40678fa30c545f0b%3A0xa1da60dfa7c982da!2z4YOi4YOU4YOl4YOc4YOd4YOe4YOQ4YOg4YOZ4YOYIOGDkeGDkOGDl-GDo-GDm-GDmA!5e0!3m2!1ska!2sge!4v1729773524595!5m2!1ska!2sge" width="600" height="450" allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                <iframe className={styles.iFrame} src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2982.4971648727847!2d41.6267781!3d41.623384!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40678fa30c545f0b%3A0xa1da60dfa7c982da!2z4YOi4YOU4YOl4YOc4YOd4YOe4YOQ4YOg4YOZ4YOYIOGDkeGDkOGDl-GDo-GDm-GDmA!5e0!3m2!1ska!2sge!4v1729773524595!5m2!1ska!2sge" width="600" height="450" allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                 <button type='button' className={styles.button} onClick={() => setShowPopUp(false)} >
                     OK
                 </button>
-            </div>}
-            <div className={styles.container}>
+            </div > : <div className={styles.container}>
                 <div className={styles.boxesWrapper}>
                     <div className={styles.grayBox}></div>
                     <div className={styles.grayBox}></div>
@@ -101,7 +101,6 @@ const YourComponent = () => {
                     </div>
                 </div>
             </div>
-        </>
 
     );
 };
