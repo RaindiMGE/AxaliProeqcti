@@ -6,7 +6,7 @@ import styles from './page.module.scss'
 import Image from 'next/image';
 
 const YourComponent = () => {
-    const [imageUrls, setImageUrls] = useState([]);
+    const [imageUrls, setImageUrls] = useState<string[]>([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState<null | string>(null);
     const [showPopUp, setShowPopUp] = useState(false)
@@ -37,12 +37,7 @@ const YourComponent = () => {
         }
 
         const urls = files.map(file => {
-            const { data, error: urlError } = supabase.storage.from('images').getPublicUrl(file.name);
-
-            if (urlError) {
-                console.error('Error getting public URL:', urlError.message);
-                return null;
-            }
+            const { data } = supabase.storage.from('images').getPublicUrl(file.name);
 
             return data.publicUrl;
         }).filter(Boolean);
