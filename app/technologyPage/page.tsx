@@ -94,7 +94,10 @@ const YourComponent = () => {
                         {imageUrls.map((url, index) => (
                             <div className={styles.infoBox} key={index}>
                                 <div className={styles.technologyBox}>
-                                    <Image src={url} alt={`Image ${index + 1}`} fill />
+                                    <img src={url} alt={`Image ${index + 1}`} style={{
+                                        width: '100%',
+                                        height: '100%'
+                                    }} />
                                 </div>
                             </div>
                         ))}
