@@ -12,31 +12,31 @@ export default function Home() {
       key="1"
       name="ანრი დუმბაძე"
       image="/anri.png"
-      role="UI/UX & Front End"
+      role="UI/UX & Front End & hardware"
     />,
     <TeammateBox
       key="2"
       name="რაინდი მგელაძე"
       image="/rainidImage.jpg"
-      role="Backend Developer"
+      role="Front end Developer"
     />,
     <TeammateBox
       key="3"
       name="მართა თოდუა"
       image="/marta.png"
-      role="პროგრესელი"
+      role="Communications & Presentation"
     />,
     <TeammateBox
       key="4"
       name="გიორგი გობაძე"
       image="/gio.png"
-      role="კაი ბიჭი"
+      role="Engineer & Presentation"
     />,
     <TeammateBox
       key="5"
       name="ელისაბედ გეგეშიძე"
       image="/gogo.png"
-      role="აზრზე არ ვარ ვინაა"
+      role="Communications & Presentation"
     />,
   ];
 
@@ -54,7 +54,7 @@ export default function Home() {
           height={340}
           className={styles.banner}
         />
-        <p className={styles.projectInfo}>ჩვენი გუნდი ერთად უკვე ერთი წელია მონაწილეობს და მიგვიღია მონაწილეობა მრავალ ჩემპიონატებში მათ შორის ათასწლეულის კონკურსშიც სადაც ფინალისტები ვართ. ჩვენ გუნდში გვყვას ელექტრო ინჟინერები, React Front End დეველოპერები, Python კონკრეტულად AI დეველოპერები, UI/Ux დიზაინერი</p>
+        <p className={styles.projectInfo}>ჩვენი გუნდი ერთად უკვე ერთი წელია მუშაობს და მიგვიღია მონაწილეობა მრავალ კონკურსში მათ შორის ათასწლეულის კონკურსშიც სადაც ფინალისტები ვართ. ჩვენ გუნდში გვყვას ელექტრო ინჟინერები, React Front End დეველოპერები, Python კონკრეტულად AI დეველოპერები, UI/Ux დიზაინერი.</p>
 
       </div>
     </div>
