@@ -3,40 +3,61 @@
   flex-direction: column;
   padding: 24px;
   gap: 40px;
+  padding-bottom: 100px;
 }
 
 .project {
   display: flex;
-  justify-content: space-between
+  justify-content: space-between;
 }
 
 .projectInfo {
   width: 655px;
   color: #fff;
-  font-family: "Palanquin Dark";
-  font-size: 36px;
+  font-family: Inter;
+  font-size: 30px;
   font-style: normal;
   font-weight: 700;
-  line-height: 46px; 
-  letter-spacing: -0.72px;
+}
+
+.banner {
+  position: relative;
+  width: 410px;
+  height: 340px;
+}
+
+.imageWrapper {
+  position: absolute;
+  width: 410px;
+  height: 340px;
 }
 
 @media (max-width: 940px) {
+  .content {
+    width: 100%;
+  }
 
-    .project{
-        flex-direction: column;
-        gap: 30px;
-    }
-    .projectInfo{
-        font-size: 20px;
-        width: 400px;
-    }
-    
+  .project {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .projectInfo {
+    font-size: 20px;
+    width: 400px;
+  }
+
+  .banner {
+    width: 100%;
+    height: auto;
+  }
+
 }
+
 @media (max-width: 1360px) {
 
-    .projectInfo{
-        font-size: 24px;
-    }
-    
+  .projectInfo {
+    font-size: 24px;
+  }
+
 }

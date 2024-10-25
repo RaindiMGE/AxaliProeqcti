@@ -18,7 +18,7 @@ const YourComponent = () => {
     }, [imageUrls])
 
     useEffect(() => {
-        if (lastImagesLength !== currentImages) {
+        if (lastImagesLength !== currentImages && (currentImages > 4)) {
             setShowPopUp(true)
             setCurretnImages(lastImagesLength)
         }
@@ -78,16 +78,27 @@ const YourComponent = () => {
                 </button>
             </div > : <div className={styles.container}>
                 <div className={styles.boxesWrapper}>
-                    <div className={styles.grayBox}></div>
-                    <div className={styles.grayBox}></div>
-                    <div className={styles.grayBox}></div>
-                    <div className={styles.grayBox}></div>
+                    <div className={styles.grayBox}>
+                        <Image src={'/projectImage.png'} alt='project image' fill objectFit='cover' />
+                    </div>
+                    <div className={styles.grayBox}>
+                        <Image src={'/secondProjectImage.jpg'} alt='project image' fill objectFit='cover' />
+                    </div>
+                    <div className={styles.grayBox}>
+                        <Image src={'/thirdProjectImage.jpg'} alt='project image' fill objectFit='cover' />
+                    </div>
+                    <div className={styles.grayBox}>
+                        <Image src={'/fouthProjectImage.jpg'} alt='project image' fill objectFit='cover' />
+                    </div>
                 </div>
                 <div className={styles.descriptionContainer}>
                     <div className={styles.vidoeContainer}>
                         <h1>Net Watch</h1>
                         <div className={styles.videoBox}>
-                            {/* <Image /> */}
+                            <video loop className={styles.video} controls>
+                                <source src="worksVideo.mp4" type="video/mp4" />
+                                თქვენი ბრაუზერი არ უჭერს მხარს ვიდეოს ფორმატს.
+                            </video>
                         </div>
                     </div>
                     <div className={styles.infoBoxes}>

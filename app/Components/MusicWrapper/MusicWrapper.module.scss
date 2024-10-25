@@ -62,7 +62,7 @@
 }
 
 /* For screens smaller than 1050px */
-@media (max-width: 1050px) {
+@media (max-width: 800px) {
   .wrapper {
     max-width: 300px;
     
@@ -97,7 +97,7 @@
 
 @media (max-width: 1350px) {
   .wrapper {
-    max-width: 400px;
+    // max-width: 400px;
   }
   .title {
     position: relative;

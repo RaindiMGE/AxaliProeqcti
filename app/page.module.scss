@@ -13,10 +13,10 @@
     .bannerWrapper {
       width: 100%;
       height: auto;
+      position: relative;
 
       .banner {
         object-fit: cover;
-        position: relative;
         width: 100%;
         height: auto;
       }

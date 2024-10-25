@@ -17,7 +17,7 @@ export default function Home() {
     <TeammateBox
       key="2"
       name="რაინდი მგელაძე"
-      image="/knight.png"
+      image="/rainidImage.jpg"
       role="Backend Developer"
     />,
     <TeammateBox
@@ -41,24 +41,21 @@ export default function Home() {
   ];
 
   return (
-    <div className={styles.page}>
-      <Aside />
-      <div className={styles.content}>
-        <MusicWrapper cards={teammateCards} name="Our Team" />
-        <div className={styles.info}>
-          <Icon name={"FAZER"} width="180px" />
-        </div>
-        <div className={styles.project}>
-          <Image
-            src={"/knight.png"}
-            alt={"main banner"}
-            width={410}
-            height={340}
-            className={styles.banner}
-          />
-          <p className={styles.projectInfo}>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga atque illo numquam id ratione minus accusantium distinctio libero, autem quos delectus ipsa molestiae dignissimos beatae? Placeat dolor vero repudiandae necessitatibus.</p>
-          
-        </div>
+    <div className={styles.content}>
+      <MusicWrapper cards={teammateCards} name="Our Team" />
+      <div className={styles.info}>
+        <Icon name={"FAZER"} width="180px" />
+      </div>
+      <div className={styles.project}>
+        <Image
+          src={"/projectImage.png"}
+          alt={"main banner"}
+          width={410}
+          height={340}
+          className={styles.banner}
+        />
+        <p className={styles.projectInfo}>ჩვენი გუნდი ერთად უკვე ერთი წელია მონაწილეობს და მიგვიღია მონაწილეობა მრავალ ჩემპიონატებში მათ შორის ათასწლეულის კონკურსშიც სადაც ფინალისტები ვართ. ჩვენ გუნდში გვყვას ელექტრო ინჟინერები, React Front End დეველოპერები, Python კონკრეტულად AI დეველოპერები, UI/Ux დიზაინერი</p>
+
       </div>
     </div>
   );
